@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.module3hw.MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/my_button"
+        android:ellipsize="start"
+        android:gravity="bottom|end"
+        android:padding="16dp"
+        android:singleLine="true"
+        android:text="10+5"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="16dp">
+
+        <Button
+            android:id="@+id/buttonClear"
+            style="@style/MyButton"
+            android:background="@drawable/my_button"
+            android:backgroundTint="#9E9E9E"
+            android:onClick="clear"
+            android:text="C" />
+
+        <Button
+            android:id="@+id/buttonDel"
+            style="@style/MyButton"
+            android:background="@drawable/my_button"
+            android:backgroundTint="#9E9E9E"
+            android:onClick="del"
+            android:text="DEL" />
+
+        <Button
+            android:id="@+id/buttonDiv"
+            style="@style/MyButton"
+            android:background="@drawable/my_button"
+            android:backgroundTint="#9E9E9E"
+            android:onClick="div"
+            android:text="/" />
+
+        <Button
+            android:id="@+id/buttonMult"
+            style="@style/MyButton"
+            android:background="@drawable/my_button"
+            android:backgroundTint="#9E9E9E"
+            android:onClick="mult"
+            android:text="x" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="16dp">
+
+        <Button
+            android:id="@+id/buttonSeven"
+            style="@style/MyButton"
+            android:background="@drawable/my_button"
+            android:onClick="seven"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/buttonEight"
+            style="@style/MyButton"
+            android:background="@drawable/my_button"
+            android:onClick="eight"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/buttonNine"
+            style="@style/MyButton"
+            android:background="@drawable/my_button"
+            android:onClick="nine"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/buttonMinus"
+            style="@style/MyButton"
+            android:background="@drawable/my_button"
+            android:backgroundTint="#9E9E9E"
+            android:onClick="minus"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:paddingLeft="16dp">
+
+        <Button
+            android:id="@+id/buttonFour"
+            style="@style/MyButton"
+            android:background="@drawable/my_button"
+            android:onClick="four"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/buttonFive"
+            style="@style/MyButton"
+            android:background="@drawable/my_button"
+            android:onClick="five"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/buttonSix"
+            style="@style/MyButton"
+            android:background="@drawable/my_button"
+            android:onClick="six"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/buttonPlus"
+            style="@style/MyButton"
+            android:background="@drawable/my_button"
+            android:backgroundTint="#9E9E9E"
+            android:onClick="plus"
+            android:text="+" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:paddingLeft="16dp">
+
+                <Button
+                    android:id="@+id/buttonOne"
+                    style="@style/MyButton"
+                    android:background="@drawable/my_button"
+                    android:onClick="one"
+                    android:text="1" />
+
+                <Button
+                    android:id="@+id/buttonTwo"
+                    style="@style/MyButton"
+                    android:background="@drawable/my_button"
+                    android:onClick="two"
+                    android:text="2" />
+
+                <Button
+                    android:id="@+id/buttonThree"
+                    style="@style/MyButton"
+                    android:background="@drawable/my_button"
+                    android:onClick="three"
+                    android:text="3" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp">
+
+                <Button
+                    android:id="@+id/buttonZero"
+                    android:layout_width="152dp"
+                    android:layout_height="72dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/my_button"
+                    android:backgroundTint="#E0E0E0"
+                    android:onClick="zero"
+                    android:text="0" />
+
+                <Button
+                    android:id="@+id/buttonPoint"
+                    style="@style/MyButton"
+                    android:background="@drawable/my_button"
+                    android:onClick="point"
+                    android:text="." />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonResult"
+            android:layout_width="72dp"
+            android:layout_height="150dp"
+            android:layout_marginLeft="8dp"
+            android:background="@drawable/my_button"
+            android:backgroundTint="#FF6D00"
+            android:onClick="result"
+            android:text="=" />
+    </LinearLayout>
+</LinearLayout>
