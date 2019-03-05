@@ -1,1 +1,1 @@
-# Simple Android calculator
+# Android calculator
